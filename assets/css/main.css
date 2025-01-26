@@ -2860,6 +2860,7 @@ input, select, textarea {
 		}
 
 /* feature custom */
+/* Styles généraux */
 .features-custom {
     display: flex;
     justify-content: center; /* Centre les éléments horizontalement */
@@ -2872,7 +2873,9 @@ input, select, textarea {
     flex-direction: column; /* Organise chaque élément en colonne */
     align-items: center; /* Centre le contenu */
     width: calc(33.333% - 2em); /* Garde la disposition en 3 colonnes */
+    margin: 1em; /* Ajoute un espacement entre les éléments */
 }
+
 .features-custom img {
     width: 130px;  /* Taille uniforme pour toutes les images */
     height: 140px; /* Hauteur fixe pour éviter le désalignement */
@@ -2886,6 +2889,23 @@ input, select, textarea {
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .features-custom li {
+    width: 100%; /* Les éléments occupent toute la largeur sur les petits écrans */
+    margin: 10px 0; /* Ajoute un espacement vertical */
+  }
+
+  .features-custom img {
+    width: 100px; /* Réduit la taille des images sur les petits écrans */
+    height: 110px; /* Ajuste la hauteur pour un meilleur alignement */
+  }
+
+  .features-custom h3 {
+    min-height: auto; /* Supprime la hauteur fixe sur les petits écrans */
+  }
 }
 
 /* Game preview */
@@ -3108,6 +3128,12 @@ input, select, textarea {
 	}
 
 /* Header */
+.logoTop img {
+    width: 150px; /* Définit la largeur de l'image */
+    height: auto; /* Maintient les proportions de l'image */
+    border-radius: 15px; /* Applique un rayon de 15px aux coins de l'image */
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse l'espace sans distorsion */
+}
 
 	#header {
 		padding: 5em 5em 1em 5em ;
